@@ -96,6 +96,14 @@ This feature, enabled by default, resets the autosens ratio to neutral when you 
 
 This feature, enabled by default, lowers oref0's target BG automatically when current BG and eventualBG are high.  This helps prevent and mitigate high BG, but automatically switches to low-temping to ensure that BG comes down smoothly toward your actual target.  If you find this behavior too aggressive, you can disable this feature.  If you do so, please let us know so we can better understand what settings work best for everyone. 
 
+#### exercise_mode
+
+This feature, when enabled, means that for a target of 111 or higher will allow your rig to create a manual sensitivity ratio, thus adjusting ISF and basals in proportion to this adjusted target. The goal of this is to recalculate IOB down to zero sooner ahead of and during activity, when the human knows this increased sensitivity is coming.
+
+#### half_basal_exercise_target
+
+This feature, when added and enabled, is for people who would like basals to be at 50% during their excersise. Your rig will utilize this feature in a similar way that excercise_mode does when a temp target of 111 or higher is set.
+
 #### unsuspend_if_no_temp:
 
 Many people occasionally forget to resume / unsuspend their pump after reconnecting it.  If you're one of them, and you are willing to reliably set a zero temp basal whenever suspending and disconnecting your pump, this feature has your back.  If enabled, it will automatically resume / unsuspend the pump if you forget to do so before your zero temp expires.  As long as the zero temp is still running, it will leave the pump suspended.
